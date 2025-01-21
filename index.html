@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>ArrayLang 2</title>
+</head>
+<body>
+	<label for="codetext">Code Input:</label><br>
+	<textarea id="codetext" rows="24" cols="80" spellcheck=false autofocus></textarea><br>
+	<button id="run" onclick="errmsg.value='';run()">Convert</button>
+	<button id="clearout" onclick="result.value = ''">Clear Output</button>
+	<button id="clearerr" onclick="errmsg.value = ''">Clear Error</button>
+	<output id="errmsg" for="codetext run"></output><br>
+	<button id="test" onclick="test1()">Test 1</button>
+	<button id="test" onclick="test2()">Test 2</button><br>
+	<label for="result">Array output:</label><br>
+	<textarea id="result" rows="32" cols="80" spellcheck=false readonly></textarea>
+</body>
+<script src=index.js></script>
