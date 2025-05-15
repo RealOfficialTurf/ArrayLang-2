@@ -81,7 +81,10 @@ This script is turned to an array...
 ```
 [g[1],(g[0]+g[1]),g[0]+g[1],g[3]+1]
 ```
-...And the array can be used directly on the [variable set](https://llamalab.com/automate/doc/block/variable_assign.html) block!
+...And the array can be used directly on the [variable set](https://llamalab.com/automate/doc/block/variable_assign.html) block like so:
+
+![image](https://github.com/user-attachments/assets/b11542b4-eb17-4e9d-9dee-19e7ab8becf3)
+
 ### Example
 Here is an example script that processes the player action and initiates a potion sale when the player decides to buy a potion. If the player has sufficient money, the potion is bought and the gold is taken away from the player. Additionally, a text is updated to reflect the outcome of the player action.
 ```
@@ -92,7 +95,7 @@ array g[4]
 ##DEFINE actionresult g[3]
 #Comments can be placed on its own in unindented code
 if playeraction="buy potion":
-	if gold>100:
+	if goldmoney>100:
 		goldmoney=goldmoney-100
 		potionitem=potionitem+1 #Comments can only be placed inline when there is an indentation
 		actionresult="Potion bought!"
